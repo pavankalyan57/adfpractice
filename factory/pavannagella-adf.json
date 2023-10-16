@@ -1,0 +1,9 @@
+{
+	"name": "pavannagella-adf",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3c39bf23-ced3-4467-9240-e1eef56de42e",
+		"tenantId": "4b806e37-1ef9-47d9-b54c-ba604f547aee"
+	}
+}

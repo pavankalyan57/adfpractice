@@ -1,0 +1,40 @@
+{
+	"name": "Parameterizeddatasetsql",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "parametrizedlinkedservice",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"database": {
+					"value": "@dataset().dbname",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"dbname": {
+				"type": "String"
+			},
+			"schemaname": {
+				"type": "String"
+			},
+			"tablename": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": {
+				"value": "@dataset().schemaname",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().tablename",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

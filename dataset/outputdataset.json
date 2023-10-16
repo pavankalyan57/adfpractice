@@ -1,0 +1,19 @@
+{
+	"name": "outputdataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkedservice_storagepavannagella",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "output",
+				"container": "adfpavannagella"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
