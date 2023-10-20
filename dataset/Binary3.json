@@ -1,12 +1,12 @@
 {
-	"name": "Binary1",
+	"name": "Binary3",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "linkedservice_storagepavannagella",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"name": {
+			"Name": {
 				"type": "string"
 			}
 		},
@@ -15,10 +15,9 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"folderPath": "input",
+				"folderPath": "adloutput",
 				"container": "adfpavannagella"
 			}
 		}
-	},
-	"type": "Microsoft.DataFactory/factories/datasets"
+	}
 }
